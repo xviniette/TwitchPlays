@@ -80,7 +80,7 @@ const getCommunityClick = () => {
 
     for (let i = 0; i < CLICKS.length; i++) {
         for (let j = i + 1; j < CLICKS.length; j++) {
-            if (CLICKS[i].dbclick == CLICKS[i].dbclick && distance(CLICKS[i].x, CLICKS[i].y, CLICKS[j].x, CLICKS[j].y) < CLICK_RADIUS * 2) {
+            if (CLICKS[i].dbclick == CLICKS[j].dbclick && distance(CLICKS[i].x, CLICKS[i].y, CLICKS[j].x, CLICKS[j].y) < CLICK_RADIUS * 2) {
                 CLICKS[i].weight++;
                 CLICKS[j].weight++;
             }
