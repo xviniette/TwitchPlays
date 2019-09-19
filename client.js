@@ -155,9 +155,9 @@ const update = () => {
     ctx.globalCompositeOperation = "multiply";
     CLICKS.forEach(click => {
         if (click.dbclick) {
-            ctx.fillStyle = "rgb(255, 191, 184)";
+            ctx.fillStyle = "rgb(255, 206, 176)";
         } else {
-            ctx.fillStyle = "rgb(255, 242, 184)";
+            ctx.fillStyle = "rgb(255, 252, 179)";
         }
         ctx.beginPath();
         ctx.arc(click.x * canvas.width, click.y * canvas.height, canvas.width * CLICK_RADIUS, 0, 2 * Math.PI);
